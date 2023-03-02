@@ -42,21 +42,21 @@ input {
   height: 30px;
   border-radius: 10px;
   width: 400px;
-  height: 50px;
+  height: 40px;
   border: 0px ;
   padding-left: 10px;
-  font-size: 26px;
+  font-size: 20px;
   background-color: rgb(13, 236, 236);
   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
-.search-form__btn{
+.search-form__btn, .load-more {
     width: 150px;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 26px;
+    font-size: 20px;
     border: 0px;
     border-radius: 10px;
     padding-left: 10px;
@@ -65,8 +65,16 @@ input {
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
 
 }
+ .load-more {
+  margin: auto;
+  margin-top: 20px;
+ }
 
 .search-form__wrapper {
   padding: 20px;
     background-color: rgb(13, 236, 199);
+}
+
+.gallery {
+  background-color: rgb(103, 82, 92);
 }

@@ -10,7 +10,14 @@ const searchButton = document.querySelector('.search-form__btn');
 const searchForm = document.querySelector('.search-form');
 const loadMoreButton = document.querySelector('.load-more');
 const gallery = document.querySelector('.gallery');
-/*const title = document.querySelector('.counter');*/
+
+window.onload = function() {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide-preloader');
+    setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+    }, 900);
+}
 
 let query = '';
 let totalHits = 0;

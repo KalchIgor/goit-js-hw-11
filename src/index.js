@@ -52,6 +52,7 @@ captionDelay:250,
 addTotalInfoCounter(data) 
 
 
+
 if (data.totalHits > perPage) {
 loadMoreButton.classList.remove('is-hidden')
 }
@@ -90,7 +91,7 @@ gallery.innerHTML = '';
 
 
 function addTotalInfoCounter (data) {
-Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
+Notiflix.Notify.success(` Hooray! We found ${data.totalHits} images.`);
 }
 
 

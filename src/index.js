@@ -71,9 +71,9 @@ const lightbox = new SimpleLightbox(".gallery a",
 captionDelay:250,
 }).refresh()
 
-const totalPages = Math.floor(data.totalHits / perPage)
+const totalPages = Math.floor(data.totalHits / perPage) - 1
 
-if (page > totalPages-1) {
+if (page > totalPages) {
 loadMoreButton.classList.add('is-hidden')
 endOfContent()
 }
